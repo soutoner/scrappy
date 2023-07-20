@@ -1,0 +1,28 @@
+{
+  "name": "bauhaus",
+  "version": "0.0.1",
+  "description": "Bauhaus stock scraper",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "npx tsc && node build/index.js",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "@types/node-cron": "^3.0.8",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "pino-pretty": "^10.0.1",
+    "prettier": "3.0.0",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "node-cron": "^3.0.2",
+    "pino": "^8.14.1",
+    "playwright": "^1.36.1"
+  }
+}
