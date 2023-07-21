@@ -19,7 +19,3 @@ export const StockTexts = {
   SOON: 'Pronto',
   CURRENTLY: 'actualmente',
 };
-
-export type StockResult = Stock | 'none' | 'error';
-
-export type Stock = 'online' | 'in_shop' | 'both';

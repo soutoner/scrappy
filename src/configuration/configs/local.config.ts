@@ -1,8 +1,8 @@
 import { Config, ProcessVariables } from '../config';
 
 export function localConfig(
-  processVariables: ProcessVariables,
-): Omit<Config, 'environment'> {
+  processVariables: Partial<ProcessVariables>,
+): Config {
   return {
     logLevel: processVariables.LOG_LEVEL ?? 'DEBUG',
     isCronEnabled: false,

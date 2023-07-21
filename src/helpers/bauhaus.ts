@@ -1,10 +1,10 @@
+import { StockResult } from '../base/bauhaus';
 import {
   BAUHAUS_URL,
   SELECTED_STORE_COOKIE,
   Selectors,
-  StockResult,
   StockTexts,
-} from './constants';
+} from '../constants/bauhaus';
 import { Page } from 'playwright';
 
 export function buildProductPageUrl(productCode: string) {

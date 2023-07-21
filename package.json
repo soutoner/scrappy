@@ -4,7 +4,9 @@
   "description": "Bauhaus stock scraper",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "npx tsc && node build/index.js",
+    "build": "rm -rf build/ && npx tsc",
+    "scrapper": "npm run build && node build/index.js",
+    "scrapper:debug": "npm run build && node --inspect-brk build/index.js",
     "test": "test"
   },
   "author": "",
@@ -21,6 +23,8 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
+    "axios": "^1.4.0",
+    "dotenv": "^16.3.1",
     "node-cron": "^3.0.2",
     "pino": "^8.14.1",
     "playwright": "^1.36.1"
